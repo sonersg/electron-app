@@ -1,0 +1,9 @@
+body {
+  background-color: aquamarine;
+}
+
+button {
+  padding: 1em;
+  border-radius: 9px;
+  cursor: pointer;
+}
