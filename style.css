@@ -6,4 +6,9 @@ button {
   padding: 1em;
   border-radius: 9px;
   cursor: pointer;
+  transition-duration: 1s;
+}
+button:hover {
+  background-color: aqua;
+  transform: scale(1, 1.15);
 }
