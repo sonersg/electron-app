@@ -28,3 +28,23 @@ npm run make
 - Electron's main and renderer process have distinct responsibilities and are not interchangeable. This means it is not possible to access the Node.js APIs directly from the renderer process, nor the HTML Document Object Model (DOM) from the main process.
 
 The solution for this problem is to use Electron's ipcMain and ipcRenderer modules for inter-process communication (IPC). To send a message from your web page to the main process
+
+## package loudness
+
+```bash
+npm i loudness
+```
+
+```js
+const loudness = require("loudness");
+
+await loudness.setVolume(45);
+
+const vol = await loudness.getVolume();
+// vol = 45
+
+await loudness.setMuted(false);
+
+const mute = await loudness.getMuted();
+// mute = false
+```

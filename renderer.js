@@ -11,6 +11,11 @@ const func = async () => {
 
 func();
 
+async function getVol() {
+  const vol = await loudness.getVol();
+  console.log(vol);
+}
+
 muteBtn.addEventListener("click", () => {
-  stat.innerText = "muted";
+  getVol();
 });
